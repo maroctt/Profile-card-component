@@ -4,19 +4,18 @@
   box-sizing: border-box;
 }
 body {
+  text-align: center;
   height: 100vh;
-  background-color: hsl(185, 75%, 39%);
-  background-image: url(images/bg-pattern-top.svg),
-    url(images/bg-pattern-bottom.svg);
-  background-position: -200px -45%, 150px 150%;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url(images/bg-pattern-top.svg) no-repeat right 50vw bottom 40vh,
+    url(images/bg-pattern-bottom.svg) no-repeat left 50vw top 40vh,
+    hsl(185, 75%, 39%);
+
   font-family: "Kumbh Sans", sans-serif;
   margin: 0 auto;
-  text-align: center;
   font-weight: 400;
   color: hsl(227, 10%, 46%);
 }
+
 .center {
   display: flex;
   align-items: center;
@@ -30,8 +29,9 @@ body {
   background-size: 100% 140px;
   background-repeat: no-repeat;
   width: 87vw;
-  max-width: 330px;
+  max-width: 350px;
   border-radius: 15px;
+  box-shadow: 0px 0px 50px 16px hsla(227, 10%, 46%, 0.1);
 }
 img {
   border-radius: 50%;
@@ -81,11 +81,12 @@ footer {
   width: 100vw;
 }
 .attribution {
-  color: white;
-  font-size: 11px;
+  color: #110f14;
+  font-size: 12px;
   position: absolute;
   bottom: 3%;
 }
 .attribution a {
-  color: hsl(229, 23%, 23%);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
 }
